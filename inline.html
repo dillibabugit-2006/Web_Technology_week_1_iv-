@@ -1,35 +1,36 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-    <title>Student Information Form</title>
+<title>Order Form</title>
 </head>
 <body>
-    <h2>Student Information Form</h2>
-    <form action="submit.html" method="POST" name="studentForm">
-        <label>Name:</label><br>
-        <input type="text" name="student_name" placeholder="Enter your name" required>
-        <br><br>
-        <label>Email:</label><br>
-        <input type="email" name="email" placeholder="Enter your email" required>
-        <br><br>
-        <label>Branch:</label><br>
-        <select name="branch" required>
-            <option value="">Select Branch</option>
-            <option value="CSE">AI&DS</option>
-            <option value="ECE">AIML</option>
-            <option value="EEE">CSE</option>
-            <option value="MECH">IT</option>
-        </select>
-        <br><br>
-        <label>Gender:</label><br>
-        <input type="radio" name="gender" value="Male" required> Male
-        <input type="radio" name="gender" value="Female"> Female
-        <br><br>
-        <label>Address:</label><br>
-        <textarea name="address" rows="4" cols="30" placeholder="Enter your address" required></textarea>
-        <br><br>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
-    </form>
+
+<h2>Place Your Order</h2>
+
+<form action="submit.html" method="POST">
+
+Name: <input type="text" required><br><br>
+
+Email: <input type="email" required><br><br>
+
+Product:
+<select required>
+<option>Laptop</option>
+<option>Mobile</option>
+<option>Headphones</option>
+</select><br><br>
+
+Payment Method:
+<input type="radio" name="pay" required>UPI
+<input type="radio" name="pay">Card<br><br>
+
+Address:<br>
+<textarea rows="4" cols="30" required></textarea><br><br>
+
+<input type="submit" value="Order Now">
+<input type="reset">
+
+</form>
+
 </body>
 </html>
